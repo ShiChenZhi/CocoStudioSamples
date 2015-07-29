@@ -1,3 +1,5 @@
+/// 可以计算按钮一直按住的时间
+
 #ifndef __testfighter__HoldBtn__
 #define __testfighter__HoldBtn__
 
