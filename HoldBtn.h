@@ -1,4 +1,5 @@
-// 可以计算按钮一直按住的时间
+
+/// 可以计算按钮一直按住的时间
 
 #ifndef __testfighter__HoldBtn__
 #define __testfighter__HoldBtn__
@@ -18,10 +19,9 @@ public:
     bool isHolding();
     virtual bool onTouchBegan(Touch* touch, Event* event);
     virtual void onTouchEnded(Touch* touch, Event* event);
+    virtual void update(float dt);
     
-    void update(float dt);
-    
-private:
+protected:
     EventListenerTouchOneByOne* iEvent;
     Sprite* iSprite;
     
