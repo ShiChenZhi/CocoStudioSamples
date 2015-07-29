@@ -1,3 +1,4 @@
+
 #include "HoldBtn.h"
 
 HoldBtn::HoldBtn():
@@ -79,5 +80,5 @@ bool HoldBtn::isHolding()
 void HoldBtn::update(float dt)
 {
     holdTime += dt;
-    log("holdtime = %f", holdTime);
+    //log("holdtime = %f", holdTime);
 }
