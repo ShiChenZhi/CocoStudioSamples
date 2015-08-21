@@ -1,0 +1,23 @@
+<Solution>
+  <PropertyGroup Name="DemoMap" Version="2.3.1.2" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="level_map_layer.csd" Type="Layer" />
+        <Folder Name="resource">
+          <Image Name="map.png" />
+          <Image Name="start.png" />
+          <Image Name="box.png" />
+          <Folder Name="buttons">
+            <Image Name="blue_btn.png" />
+            <Image Name="green_btn.png" />
+            <Image Name="close_btn_n.png" />
+            <Image Name="close_btn_s.png" />
+            <Image Name="red_btn.png" />
+          </Folder>
+          <Image Name="alert_bg.png" />
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

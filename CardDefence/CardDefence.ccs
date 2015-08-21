@@ -1,0 +1,15 @@
+<Solution>
+  <PropertyGroup Name="CardDefence" Version="2.3.1.2" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Image Name="HelloWorld.png" />
+        <Project Name="HpBar.csd" Type="Layer" />
+        <Image Name="sliderBg.png" />
+        <Image Name="sliderValue.png" />
+        <Project Name="TollgateUI.csd" Type="Scene" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
