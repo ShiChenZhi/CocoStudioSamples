@@ -1,0 +1,24 @@
+<Solution>
+  <PropertyGroup Name="DemoBag" Version="2.3.1.2" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Folder Name="common">
+          <Image Name="beEquiped.png" />
+          <Image Name="btn_close_n.png" />
+          <Image Name="btn_close_s.png" />
+          <Image Name="item_bg.png" />
+          <Image Name="bag_bg.png" />
+          <Image Name="slider_bar.png" />
+          <Image Name="slider_base.png" />
+          <Image Name="item_common_bg.png" />
+          <Image Name="flag_debris.png" />
+        </Folder>
+        <Project Name="bagItem.csd" Type="Node" />
+        <Project Name="bagScene.csd" Type="Scene" />
+        <Project Name="dialogBag.csd" Type="Layer" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

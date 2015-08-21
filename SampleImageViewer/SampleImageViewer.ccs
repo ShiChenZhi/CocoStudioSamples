@@ -1,0 +1,15 @@
+<Solution>
+  <PropertyGroup Name="SampleImageViewer" Version="2.3.1.2" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Folder Name="resource">
+          <Image Name="background.png" />
+          <Image Name="page_index_bg.png" />
+          <Image Name="page_index_img.png" />
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
