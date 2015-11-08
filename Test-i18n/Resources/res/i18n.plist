@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>tipItem</key>
+	<string>提示道具</string>
+	<key>timeItem</key>
+	<string>时间道具</string>
+	<key>gameContinue</key>
+	<string>继续游戏</string>
+	<key>mainMenu</key>
+	<string>主菜单</string>
+	<key>replay</key>
+	<string>重玩</string>
+	<key>leftItems</key>
+	<string>剩余道具</string>
+	<key>start</key>
+	<string>开始</string>
+	<key>signItem</key>
+	<string>标记工具</string>
+	<key>OverplusItem</key>
+	<string>剩余提示工具</string>
+	<key>heartItem</key>
+	<string>钥匙道具</string>
+	<key>gem</key>
+	<string>钻石</string>
+	<key>item</key>
+	<string>道具</string>
+	<key>nextStep</key>
+	<string>下一步</string>
+	<key>buy</key>
+	<string>购买</string>
+	<key>autoFlopItem</key>
+	<string>自动填充工具</string>
+	<key>level</key>
+	<string>等级</string>
+	<key>inactive</key>
+	<string>未激活</string>
+	<key>AssistItem</key>
+	<string>辅助道具</string>
+	<key>connecting</key>
+	<string>网络连接中......</string>
+</dict>
+</plist>
