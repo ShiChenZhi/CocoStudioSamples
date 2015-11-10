@@ -69,10 +69,12 @@ void TestJsonScene::readJson()
     
         // Generate json document object.
         doc.Parse<0>(load_str.c_str());
-        CC_BREAK_IF(doc.HasParseError());
+        if (doc.HasParseError()) {
+            CCLOG("json 解析错误：ParseErrorCode %u  ！！！！！！！！！！", doc.GetParseError());
+        }
         CC_BREAK_IF(!doc.IsObject());
         
-        
+
         // Get ‘object’ or ‘value’ via [].
         if(!doc.HasMember("stock"))
             return;
@@ -93,14 +95,37 @@ void TestJsonScene::readJson()
                     std::string sn = innerSn.GetString();
                     float price = innerPrice.GetDouble();
                     CCLOG("sn = '%s', price = %f", sn.c_str(), price);
+
                 }
             }
-     
         }
         
     } while (0);
   
     
+    /***** Updata Json File
+    // 同 writeJson 函数示例。
+    // 可以用写入接口，更改 json 文件;
+
+     // 更改 price 数值
+    rapidjson::SizeType index = 1;
+    rapidjson::Value& pi = doc["stock"][index];
+    rapidjson::Value& pi2 = pi["product"]["price"];
+    pi2.SetDouble(99.99);
+    
+     // 重写json文件
+    rapidjson::StringBuffer buffer;
+    rapidjson::Writer<rapidjson::StringBuffer> writer(buffer);
+    doc.Accept(writer);
+    
+    std::string path = FileUtils::getInstance()->fullPathForFilename("/Users/Konvie/cocos/cocos/JsonParser/Resources/stock.json");
+    FILE* file = std::fopen(path.c_str(), "w");
+    if (file) {
+        fputs(buffer.GetString(), file);
+        fclose(file);
+        CCLOG("pah = %s", path.c_str());
+    }
+    */
 }
 
 void TestJsonScene::writeJson()
